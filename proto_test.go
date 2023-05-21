@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/NYTimes/openapi2proto"
-	"github.com/NYTimes/openapi2proto/compiler"
-	"github.com/NYTimes/openapi2proto/protobuf"
+	"github.com/sanposhiho/openapi2proto"
+	"github.com/sanposhiho/openapi2proto/compiler"
+	"github.com/sanposhiho/openapi2proto/protobuf"
 	"github.com/pmezard/go-difflib/difflib"
 )
 
@@ -151,11 +151,9 @@ func TestGenerateProto(t *testing.T) {
 		{
 			fixturePath: "fixtures/missing_type.json",
 		},
-		/*
-			{
-				fixturePath: "fixtures/kubernetes.json",
-			},
-		*/
+		{
+			fixturePath: "fixtures/kubernetes.json",
+		},
 		{
 			fixturePath: "fixtures/accountv1-0.json",
 		},
